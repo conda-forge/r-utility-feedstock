@@ -1,11 +1,11 @@
-About r-utility
-===============
+About r-utility-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-utility-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=utility
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-utility-feedstock/blob/main/LICENSE.txt)
 
 Summary: Construct and plot objective hierarchies and associated value and utility functions. Evaluate the values and utilities and visualize the results as colored objective hierarchies or tables. Visualize uncertainty by plotting median and quantile intervals within the nodes of objective hierarchies. Get numerical results of the evaluations in standard R data types for further processing.
 
