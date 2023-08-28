@@ -1,4 +1,4 @@
-{% set version = '1.4.5' %}
+{% set version = "1.4.6" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/utility_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/utility/utility_{{ version }}.tar.gz
-  sha256: ad9f69f01c443e1dd90f8c2a761a8c62c902bc820b1390fbf64651f47c5f2128
+  sha256: 2363575a5c2d429367c4d285f35af0eaa9e684ded8774ed3f473007c95bf051d
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -37,11 +37,8 @@ test:
 about:
   home: https://CRAN.R-project.org/package=utility
   license: GPL-3.0-only
-  summary: Construct and plot objective hierarchies and associated value and utility functions.
-    Evaluate the values and utilities and visualize the results as colored objective
-    hierarchies or tables. Visualize uncertainty by plotting median and quantile intervals
-    within the nodes of objective hierarchies. Get numerical results of the evaluations
-    in standard R data types for further processing.
+  summary: Construct and plot objective hierarchies and associated value and utility functions. Evaluate the values and utilities and visualize the results as colored objective hierarchies or tables. Visualize uncertainty by plotting median and quantile intervals within the nodes of objective hierarchies. Get numerical results
+    of the evaluations in standard R data types for further processing.
   license_family: GPL3
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
